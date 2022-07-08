@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        
+        <meta charset="UTF-8">
+        <title>Funcion Calc</title>
+    </head>
+    <body>
+        
+        <!-- El titulo será "Calculadora"-->
+        <h1>Calculadora</h1>
+
+        <!--Aquí se ingresan 2 input del tipo texto, que en medio cuenta con una X como signo de multiplicación-->
+        <input type="text" id="arg1" size="1"> X <input type="text" id="arg2" size="1">
+
+        <!--Aqui se ingresa un input del tipo button, con el texto calcular, que llama a la función puesta mas abajo.-->
+        <input type="button" value="Calcular!" onclick="calc()"> 
+        <div id="result"></div>
+
+        <!-- Con <script> lo que hacemos es comenzar a escribir nuestro código JavaScript-->
+        <script type="text/javascript">
+
+            function calc(){ // el nombre de la función será calc, que en sintesis, multiplicará 2 valores ingresados por un usuario, entregando el resultado
+            var argOne=document.getElementById('arg1').value; // Aqui se define la primera variable "argOne", que se hace referencia a "arg1", que es el id del primer input
+            var argTwo=document.getElementById('arg2').value; // aqui se define la segunda variable "argTwo", que se hace referencia a "arg2", que es el id del segundo input
+            var ans=(argOne*argTwo); // la variable ans corresponde a la multiplicacion del argOne y argTwo.
+            document.getElementById('result').innerHTML=argOne + ' multiplicado por ' + argTwo + ' es igual a ' + ans; //Aqui se adhiere el div llamado "result", en donde se junta el argOne, el argTwo y la variable ans, que corresponde al resultado
+            }
+        </script>
+
+        
+    </body>
+</html>

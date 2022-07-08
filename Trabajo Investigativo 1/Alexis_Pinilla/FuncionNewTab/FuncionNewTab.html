@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        
+        <meta charset="UTF-8">
+        <title>FuncionNewTab</title>
+    </head>
+    <body>
+        <p>Click the button to open a new tab </p>
+        
+        <!-- Botón clickeable, que llama a la función creada en javascript-->
+        <button onclick="NewTab()">
+        Open Geeksforgeeks
+        </button>
+    <!-- Con <script> lo que hacemos es comenzar a escribir nuestro código JavaScript-->    
+    <script>
+        function NewTab() { //Llamando a la función NewTab
+            window.open( // Esto permitirá que al clickear el botón cargue la página puesta en los argumentos.
+              "https://www.geeksforgeeks.org", "_blank"); //Los argumentos dentro de windows.open, son la página a la que redigirá y el "_blank" es para que se abra en una nueva ventana. Esto es similar a lo que va en la etiqueta <a>, donde puedes poner target= "_blank"
+        }
+    </script>
+    </body>
+</html>

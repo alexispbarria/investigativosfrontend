@@ -1,0 +1,19 @@
+Función confirm: https://norfipc.com/web/javascript-facil-paginas-web-ejemplos.html
+
+Función prompt: https://norfipc.com/web/javascript-facil-paginas-web-ejemplos.html
+
+Funcion getDate, Month y Year: view-source:https://www.uv.es/jac/guia/jscript/calenda.htm
+
+Funcion botonHuidizo: https://norfipc.com/web/javascript-facil-paginas-web-ejemplos.html
+
+Funcion Multiplicadora: https://norfipc.com/web/javascript-facil-paginas-web-ejemplos.html
+
+Funcion Hora Actual: https://www.hostinger.es/tutoriales/insertar-javascript-en-html/
+
+Función Scroll Top: https://www.geeksforgeeks.org/scroll-to-the-top-of-the-page-using-javascript-jquery/
+
+Funcion New Tab: https://www.geeksforgeeks.org/how-to-open-url-in-new-tab-using-javascript/?ref=lbp
+
+Funcion Without Clicking: https://www.geeksforgeeks.org/open-a-link-without-clicking-on-it-using-javascript/?ref=lbp
+
+Funcion Detect Closing: https://www.geeksforgeeks.org/how-to-detect-browser-or-tab-closing-in-javascript/?ref=lbp

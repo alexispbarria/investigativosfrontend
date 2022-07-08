@@ -1,0 +1,19 @@
+Un objeto cuenta con atributos y metodos.
+
+Ej:
+
+objeto: auto
+
+atributos: marca, modelo, peso, color.
+
+metodos: frenar, acelerar, etc
+
+lo primero que se define es una variable, que puede sr con let o const, para luego asignar los atributos mediante un documento JSON (similar):
+
+const car = {type: 'car'}
+
+para obtener los valores de los atributos se puede obtener de distintas maneras:
+
+person.firstName
+
+person {'firstName'}

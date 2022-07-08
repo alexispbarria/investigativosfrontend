@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <style>
+            /* Modificando mediante codigo css la clase .scroll, en ella se le asigna la altura y el color de fondo*/
+            .scroll {
+                height: 1000px;
+                background-color: lightgreen;
+            }
+        </style>
+        <meta charset="UTF-8">
+        <title>FuncionScrollTop</title>
+    </head>
+    <body>
+        <p>Click on the button below to 
+            scroll to the top of the page.</p>
+          
+        <!-- Este es el párrafo clase scroll, quien tiene una altura de 100px y color de fondo lightgreen-->
+        <p class="scroll">GeeksforGeeks is a
+            computer science portal. This is a 
+            large scrollable area.</p>
+        
+            <!-- Este button, con el texto click to scroll to top, llama a la funcion Javascript para que al clickear, se ejecute-->
+        <button onclick="scrollToTop()">
+            Click to scroll to top
+        </button>
+        <!-- Con <script> lo que hacemos es comenzar a escribir nuestro código JavaScript-->
+        <script>
+            function scrollToTop() { //La función scrollToTop, nos permitirá ir hacia lo más arriba de la página solo con clickear
+                window.scrollTo(0, 0); //en los argumentos, se le asigna concretamente donde nos dejará al clickear el button, en este caso, es en lo más alto del a página.
+            }
+        </script>
+    </body>
+</html>

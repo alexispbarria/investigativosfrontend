@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        
+        <meta charset="UTF-8">
+        <title>FuncionWithoutClicking</title>
+        <style>
+            /*Mediante codigo CSS, modificamos el div con clase gfg, alineando el texto al centro, tamaño de letra de 40px, negrita y color verde*/
+            .gfg { 
+                text-align:center;
+                font-size:40px;
+                font-weight:bold;
+                color:green;
+            }
+        </style>
+
+        <!-- Con <script> lo que hacemos es comenzar a escribir nuestro código JavaScript-->
+        <script>
+            function myFunction() {
+                window.open("https://www.geeksforgeeks.org", "_top"); //la función abrirá la página puesta en windows.open, llevandola al "top" de esta.
+            }
+        </script>
+    </head>
+    <body>
+
+        <!--Se llama a la funcion JavaScript al momento de pasar el mouse encima de las letras, sin necesidad de clickear.-->
+        <div class = "gfg" onmouseover = "myFunction()">
+            GeeksforGeeks
+        </div>
+    </body>
+</html>

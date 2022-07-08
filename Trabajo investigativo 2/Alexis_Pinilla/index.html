@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <meta charset="UFT-8">
+        <title>Trabajo Investigativo 2</title>
+
+        <!--Llamando a nuestro archivo estilos.css para nuestro diseño de página-->
+        <link rel="stylesheet" href="css/estilos.css">
+       
+
+    </head>
+    <body>
+        <!-- configurando el bloque de header -->
+        <div class="header">
+            <!--Titulo de nuestro bloque header -->
+            <h1>Cafetería "Puro Café"</h1>
+        </div>
+        <!-- Comenzando con el bloque de slider -->
+        <div class="container-slider">
+            <!-- Configuración del slider, el id es para javascript -->
+            <div class="slider" id="slider">
+                <!-- Seccion 1 del slider, imagen 1 -->
+                <div class="slider_section">
+                    <img src="img/cafe1.jpg">
+                    <a href="#">Cotiza aquí!</a>
+                </div>
+                <!-- seccion 2 del slider, imagen 2 -->
+                <div class="slider_section">
+                    <img src="img/cafe2.jpg">
+                    
+                </div>
+                <!-- seccion 3 del slider, imagen 3 -->
+                <div class="slider_section">
+                    <img src="img/cafe3.jpg" >
+                    
+                </div>
+                <!-- seccion 4 del slider, imagen 4 -->
+                <div class="slider_section">
+                    <img src="img/cafe4.jpg">
+                    
+                </div>
+            </div>
+            <!-- configurando nuestros botones de izquierda y derecha-->
+            <div class="slider_btn slider_btn_right" id="btn-right">></div>
+            <div class="slider_btn slider_btn_left" id="btn-left"><</div>
+        </div>
+
+        <!--Inicio formulario-->
+        <div class="box">
+            <form name="formulario">
+                <!-- Label nombre completo, cuyo input tiene el id de nombre, placeholder (texto por defecto), y llama a la funcion upperCase a través de un onblur, que se activará cuando nos salgamos el input-->
+                <label>Nombre Completo</label>
+                <input type="text" id="nombre" onblur="upperCase()" placeholder="Ingrese su nombre completo...">
+                
+                <!--Label rut, que llama a la funcion checkRut a través de un required (required hará obligatoria la respuesta a nuestro campo) oninput, se activará cuando pulsemos nuestro button-->
+                <label>RUT</label>
+                <input type="text" id="rut" name="rut" required oninput="checkRut(this)" placeholder="Formato: xx.xxx.xxx-x">
+                
+                <!--Label de correo electronico, cuyo tipo es email (esto valida que nuestro ingreso sea del tipo email)-->
+                <label>Correo Electrónico</label>
+                <input type="email" id="correo" name="correo"  placeholder="Ej: alexispinilla14@inacapmail.cl">
+                
+                <!--Label de edad cuyo tipo es numerico (no permite valores de string)-->
+                <label>Edad</label>
+                <input type="number" id="edad" name="edad" placeholder="Ej: 25">
+                
+                <!--Label de fecha de nacimiento cuyo tipo es date (permite que la fecha de nacimienta esté con un botón de calendario)-->
+                <label>Fecha de Nacimiento</label>
+                <input type="date" id="date">
+
+                <!--boton del tipo submit-->
+                <button id="validar" onclick="completarCampos()" >Validar</button>
+                
+                
+            </form>
+
+        </div>
+        
+        <div class="contadorFalso">
+            <!--Generar contador de visitas falso-->
+            <script>
+                document.write("<font size='+1'>Usuarios Online: </font>" + Math.floor((Math.random() * 99999) + 9000));
+            </script>
+        </div>
+
+        <!-- Generando las reseñas-->
+        <div class="review">
+
+            <!--Configurando los items de nuestro slider manual.-->
+            <!-- Todos estan diseñados con la misma estructura: una imagen, un titulo y un parrafo.-->
+            <div class="review__items">
+                <img src="img/comentario1.png"/>
+                <h1>Recomendado!</h1>
+                <p>
+                    Ha sido gratificante la compra dentro de puro café, 
+                    pura calidad! <br> <b><i>Fernando Ramirez.</i></b>
+                </p>
+      
+            </div>
+      
+            <div class="review__items">
+                <img src="img/comentario2.png"/>
+                <h1>Magnífico</h1>
+                <p>
+                    Nunca probé un Nescafé como en Puro Café.
+                    Inolvidable experiencia. <br> <b><i>Lionel Messi</i></b>
+                </p>
+      
+            </div>
+      
+            <div class="review__items">
+                <img src="img/comentario3.png"/>
+                <h1>Amazing!</h1>
+                <p>
+                    10/10 La expereciencia, contraté el servicio 
+                    de Coffee Break para mi matrimonio. <br><b><i>Emilia Targeryan</i></b>
+                <p>
+            </div>
+
+            <div class="review__items">
+                <img src="img/comentario4.png"/>
+                <h1>You must come!</h1>
+                <p>
+                    La experiencia en la compra de mi Café
+                    Colombiano fue gratificante, buenos precios y 
+                    magnífica atención! <br><b><i>Marshall Matters</i></b>
+                <p>
+            </div>
+
+            <div class="review__items">
+                <img src="img/comentario5.png"/>
+                <h1>¡Excelente!</h1>
+                <p>
+                    Realicé un curso de Barista en Puro Café 
+                    y actualmente conseguí trabajo en Manchester!
+                    Muy agradecido y recomendado! Siuuu
+                    <br><b><i>Cristiano Ronaldo</i></b>
+                <p>
+            </div>
+            
+            <!-- Configurando los botones para cambiar de reseña, cada uno contiene un botón que hace llamado a la funcion previous y next, dentro de js.-->
+            <div class="review__button">
+                <button id="prev" onclick="previousReview()">
+                    PREV
+                </button>
+                  
+                <button id="next" onclick="nextReview()">
+                    NEXT
+                </button>
+            </div>
+        </div>
+
+        <!-- Sección que contiene 3 imágenes acorde al servicio, con un efecto hover cada una -->
+        <div class="seccionfotos">
+            <div class="img1">
+                <img src="img/imagen1.jpg">
+            </div>
+            <div class="img2">
+                <img src="img/imagen2.jpg">
+            </div>
+            <div class="img3">
+                <img src="img/imagen3.jpg" alt="">
+            </div>
+        </div>
+
+        <!-- Armando las etiquetas del popup-->
+        <div class="popup">
+            <!-- Contenido del popup-->
+            <div class="contentBox">
+                <!--Configurando el botón de close (para cerrar el popup)-->
+                <div class="close"></div>
+                <!--Configurando la imagen (logo)-->
+                <div class="imgBx">
+                    <img src="img/logo.png">
+                </div>
+                <!--Contenido del texto, incluye un subtitulo, sub sub titulo y un parrafo con salto.-->
+                <div class="content">
+                    <div>
+                        <h2>Felicidades</h2>
+                        <h3>Ten una cálida bienvenida</h3>
+                        <p>Disfruta de todos nuestros productos y servicios ofrecidos, cada uno de estos
+                        será con un 100% de nuestra dedicacion y profesionalidad.
+                        <br> 
+                        Recuerda que la compañía siempre va de la mano con un buen café!
+                    </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+           
+        <!--Llamando a nuestro archivo trabajo.js para nuestras funciones javascript-->
+        <script src="js/trabajo.js"></script>
+    </body>
+</html>

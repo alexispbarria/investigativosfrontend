@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <h2><a href="index.html">VOLVER AL INDICE</a></h2>
+        <br>
+        <br>
+        <div>
+            <!--Primer bloque, donde se encuentran los input para ingresar todos los datos por parte del usuario, estos serán capturados mediante codigo javascript-->
+            <h3>Ingresar Datos Personales</h3>
+            <p>Actualizar Foto: </p>
+            <input type="text" id="foto" placeholder="Ingrese el link de su foto...">
+            <p>Nombre Completo: </p>  
+            <input type="text" id="nombreCompleto" placeholder="Ingrese nombre completo..."><br><br>
+            <p>RUT: </p>
+            <input type="text" id="rut" placeholder="Ingrese su rut..."><br><br>
+            <p>Fecha de nacimiento: </p>
+            <input type="date" id="fechaNace" placeholder="Ingrese su fecha de nacimiento..."><br><br>
+            <p>Correo Electrónico: </p>
+            <input type="mail" id="correoElectronico" placeholder="Ingrese correo electrónico..."><br><br>
+            <p>Profesión: </p>
+            <input type="text" id="profesion" placeholder="Ingrese su profesión..."><br><br>
+            <!--botón que de ser apretado, tomará todo el contenido de los inputs y lo ingresará en el segundo bloque-->
+            <button id="agregarDatos">Actualizar</button>
+        </div>
+        <br>
+        <!--bloque de datos ingresados, donde se reflejaran todos los datos ingresados por el usuario-->
+        <h3>Datos Ingresados: </h3>
+        <ul id="datosIngresados">
+            <!--bloque de imágen, donde el src será tomado desde el link que ingrese el usuario en su respectivo input, con una altura y largo de 200px cada uno-->
+            <li><img src="" id="linkFoto" width="200" height="200"></li>
+            <li id="ulNombre"></li>
+            <li id="ulRut"></li>
+            <li id="ulFechaNace"></li>
+            <li id="ulCorreo"></li>
+            <li id="ulProfesion"></li>
+        </ul>
+
+    </body>
+    <script src="js/objectB.js"></script>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <style>
+            /* La etiqueta style, permite la edición del codigo CSS dentro de html*/
+            /*En este caso, se está dando diseño a los div creados dentro del body, que pertenecen a los botones "si" y "no"*/
+            div.c2 {
+
+                /*Ajustando la posición del boton "si"*/
+                position:absolute; 
+
+                /*Ajustando su alto, ancho, posicion arriba y hacia la izquierda (distancia).*/
+                left:300px; 
+                top:300px; 
+                width:50px; 
+                height:50px;
+            }
+            div.c1 {
+
+                /*Ajustando la posicion del boton "NO"*/
+                position:absolute; 
+
+                /*Ajustando su alto, ancho, posicion arriba y hacia la izquierda (distancia).*/
+                left:350px; 
+                top:300px; 
+                width:50px; 
+                height:50px;
+            }
+        </style>
+        <meta charset="UTF-8">
+        <title>Funcion Botón Huidizo </title>
+    </head>
+    <body>
+        <!-- Con <script> lo que hacemos es comenzar a escribir nuestro código JavaScript-->
+        <script>
+
+            var flag=1;function t(){ // Creando una función denominada "t", que será utilizado en caso que el mouse se acerce al botón "no"
+                if(flag==1){ // dependiendo de los if (se enfocan en la distancia del mouse al botón "no"), se cambiará la posición del input, haciendo que se vea como "huida"
+                    N.style.top="75px";N.style.left="700px"
+                }
+                if(flag==2){
+                    N.style.top="115px";N.style.left="100px"
+                }
+                if(flag==3){
+                    N.style.top="300px";N.style.left="350px"
+                }flag=flag+1;
+
+                if(flag==4){flag=1}}
+
+                function al(){ // Por el contrario, si el el usuario pulsa el botón "Si", arrojará una alerta en pantalla que dirá "Correcto!"
+                    alert("Correcto!")
+                }
+        </script>
+           NorfiPC es un sitio es muy interesante?
+
+        <!-- Definiendo el  botón no, configurandolo con la función "t" en onmouseover, que es cuando el mouse esté encima.-->
+        <!-- Cuenta con un formulario, que dentro tiene un input del tipo button, con el value (valor) NO!-->
+        <div id="N" class="c1">
+            <form>
+                <input type="button" value="NO" onmouseover="t()" />
+            </form>
+        </div>
+
+        <!-- Definiendo el botón si, configurandolo con la función "al", que arroja el mensaje en pantalla al momento de pulsar "si"-->
+        <!-- Cuenta con un formulario, que dentro tiene un input del tipo button, con el value (valor) SI!-->
+        <div id="Y" class="c2">
+            <form>
+                <input type="button" value="SI" onclick="al()" />
+            </form>
+        </div>
+
+        
+    </body>
+</html>

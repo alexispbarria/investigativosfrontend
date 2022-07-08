@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <meta charset="UTF-8">
+        <title>Función Prompt</title>
+    </head>
+    <body>
+
+        <!-- Con <script> lo que hacemos es comenzar a escribir nuestro código JavaScript-->
+        <script>
+            function prompter() { // function nos permite comenzar a desarrollar nuestra funcion, mientras que prompter es el nombre de esta.
+            var reply = prompt("Buenas ¿cuál es tu nombre?", "") // se crea una variable reply, con la funcion prompt que genera un mensaje de la página, con un cuadro que nos permitirá escribir texto
+            alert ( "Es un gusto tenerte aquí " + reply + "!") // al momento de escribir un texto o dejar vacío y pulsar aceptar, nos arrojará el mensaje. reply será lo que el usuario escriba. Si no se escribe nada, arrojará un null.
+            }
+            </script>
+
+            <!-- Posterior al codigo JavaScript, se creará un botón, para que al pulsarlo, nos derive al codigo expuesto anteriormente.-->
+            <!-- Esta derivación se hace a través de "onclick" a lo que como argumento, ponemos el nombre de la funcion creada.-->
+            <button type="button" onclick="prompter()">Probar prompt</button>
+    </body>
+</html>

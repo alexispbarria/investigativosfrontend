@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h2><a href="index.html">VOLVER AL INDEX</a></h2>
+        <br>
+        <div id="arrayNombres"></div>
+        <br>
+        <div id="nombreAscendente"></div>
+        <br>
+        <div id="cadenaMasLarga"></div>
+        <br>
+        <h3>Agregar palabras al Array:</h3>
+        <form>
+            <input type="text" id="usuarioIngresaNombre">
+            <input type="submit" id="agregarArrayB" value="Agregar" onsubmit="return arrayBAgregar()">
+            <br><br>
+            <span>eliminar el último nombre del array: </span>
+            <input type="button" id="eliminarArrayB" value="Eliminar" onclick="arrayBEliminar()">
+        </form>
+        <br>
+        <div id="valorAgregado"></div>
+        <div id="valorEliminado"></div>
+    </body>
+    <script type="text/javascript" src="js/arrayB.js">
+        arrayB(); // funcion que nos devuelve los nombres de nuestro array, nombres ascendentes y nombre más largo
+    </script>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        
+        <meta charset="UTF-8">
+        <title>Función getDate, getMonth y getYear</title>
+    </head>
+    <body>
+        
+        <!-- Con <script> lo que hacemos es comenzar a escribir nuestro código JavaScript-->
+        <!-- Este tendrá como función mostrar la fecha actual, dia, mes y año.-->
+            <script language="JavaScript" >
+                
+                var hoy = new Date(); // Se crea una variable denominada hoy,la cual tendrá un formato type fecha (new Date())
+                dia = hoy.getDate(); //Utilizando la funcion getDate() se obtiene el día actual, por lo que se procede a crear una variable llamada dia, que se combinará con la anterior llamada hoy.
+                mes = hoy.getMonth(); // al igual que el pnto anterior, se crea una variable, pero esta vez con la funcion getMonth, que otorga el NÚMERO del mes (de 0 a 11)
+                ano = hoy.getYear() + 1900; // aqui se utiliza getYear() para obtener el año. Cabe recalcar, que empieza desde el numero 100, por lo que es neceario agregar una "suma" de 1900.
+                
+                if (mes == "0") nombremes = "<font color=#FF0000 size 5>enero</font>"; //Como vimos, la funcion getMonth ingresa los meses en numeros, por lo que utilizamos if, else if y else para que, dependiendo el numero, nos entregue el resultado en texto, mas precisamente como nombre del mes.
+                else if (mes == "1") nombremes = "<font color=#FF0000 size 5>febrero</font>";
+                else if (mes == "2") nombremes = "<font color=#FF0000 SIZE=5>marzo</font>";
+                else if (mes == "3") nombremes = "<font color=#FF0000 SIZE=5>abril</font>";
+                else if (mes == "4") nombremes = "<font color=#FF0000 SIZE=5>mayo</font>";
+                else if (mes == "5") nombremes = "<font color=#FF0000 SIZE=5>junio</font>";
+                else if (mes == "6") nombremes = "<font color=#FF0000 SIZE=5>julio</font>";
+                else if (mes == "7") nombremes = "<font color=#FF0000 SIZE=5>agosto</font>";
+                else if (mes == "8") nombremes = "<font color=#FF0000 SIZE=5>septiembre</font>";
+                else if (mes == "9") nombremes = "<font color=#FF0000 SIZE=5>octubre</font>";
+                else if (mes == "10") nombremes = "<font color=#FF0000 SIZE=5>noviembre</font>";
+                else nombremes = "<font color=#FF0000 SIZE=5>diciembre</font>";
+                
+                document.write (dia); //document.write corresponde a un print que se visualizará en pantalla, aqui ya se agregan las variables antes puestas, para que se muestre dentro de la pagina web.
+                document.write (" de ");
+                document.write (nombremes);
+                document.write (" de ");
+                document.write (ano);
+                
+            </script>
+    </body>
+</html>

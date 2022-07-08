@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UFT-8">
+        <title>Función Confirm</title>
+    </head>
+
+    <body>
+
+        <!-- Con <script> lo que hacemos es comenzar a escribir nuestro código JavaScript-->
+        
+        <script>
+                     
+            function confirmacion() { // function nos permite comenzar a desarrollar nuestra funcion, mientras que confirmacion es el nombre de esta.
+                var pregunta = confirm("¿Deseas visitar la página principal?") // se crea la varia pregunta, la cual utiliza la funcion confirm, seguida de un mensaje. Lo que hace esta funcion es abrir un mensaje dentro de la página web, que arrojará el mensaje descrito dentro de los parentesis 
+                if (pregunta){ // seguido de eso, comenzamos con sentencia condicional, en este caso if - else, el mensaje en la pagina web tendrá 2 opciones, aceptar o cancelar. Lo que suceda, dependerá de la varia pregunta, que corresponde a la respuesta del usuario.
+                    alert("Te envío allí rápidamente") // Si el usuario pulsa la primera opción (aceptar en este caso), la funcion alert nos mostrará un mensaje (descrito en el parentesis)
+                    window.location = "https://norfipc.com/"; //al pulsar aceptar nuevamente, window.location nos derivará a la página que sale ahí (puede ser la que nosotros escribamos)
+                }
+                else{ //else, vendría siendo la opcion por el contrario de if, en este caso es cancelar.
+                    alert("Quizás en otro momento...\n Gracias de todas formas") // al pulsar cancelar, la funcion alert nos enviará el mensaje descrito en el parentesis. \n corresponde a un salto de linea.
+                }
+            }
+            </script>
+
+            <!-- Posterior al codigo JavaScript, se creará un botón, para que al pulsarlo, nos derive al codigo expuesto anteriormente.-->
+            <!-- Esta derivación se hace a través de "onclick" a lo que como argumento, ponemos el nombre de la funcion creada.-->
+            <button type="button" onclick="confirmacion()" >Probar confirm</button> 
+            
+    </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <h2><a href="index.html">VOLVER AL INDICE</a></h2>
+        <br>
+        <br>
+        <h3>Filtrar animales por especie</h3>
+        <!--input y botón solo para la función de filtrado por especie-->
+        <input type="text" id="filtroEspecie" placeholder="ej: Canino"><button id="filtro">Filtrar</button>
+        <br><br><br>
+        <!--bloque de botones para ordenar de forma ascendente y descendente el listado-->
+        <h3>Click para ordenar el listado de forma ascendente o descendente</h3>
+        <button id="mostrarAscendente">ascendente</button>
+        <button id="mostrarDescendente">descendente</button>
+
+        <!--Listado del array completo, se muestra en pantalla sin necesidad de clickear en los botones.-->
+        <!--Se creo un UL por cada una de las listas, para que estos tengan distancia entre si.-->
+        <h3>Listado de animales con sus atributos</h3>
+        <ul id="primerListado"></ul>
+        <ul id="segundoListado"></ul>
+        <ul id="tercerListado"></ul>
+        <br>
+        
+        <!--Bloque de filtro, hay un ul debido a que hay un listado de objeto por especie.-->
+        <h3 id="tituloFiltro"></h3>
+        <ul id="filtrado"></ul>
+       
+        <br>
+
+        <!--Bloque para mostrar el resultado de manera ascendente-->
+        <h3 id="tituloA"></h3>
+        <ul id="ascendente1"></ul>
+        <ul id="ascendente2"></ul>
+        <ul id="ascendente3"></ul>
+        <br>
+
+        <!--bloque para mostrar el resultado de manera descendente-->
+        <h3 id="tituloD"></h3>
+        <ul id="descendente1"></ul>
+        <ul id="descendente2"></ul>
+        <ul id="descendente3"></ul>
+    </body>
+    <script src="js/objectA.js"></script>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        
+        <meta charset="UTF-8">
+        <title>FuncionDetectClosing</title>
+    </head>
+    <body>
+        <!-- Titulo con el texto GreksforGeeks -->
+        <h1 style="color: green">
+            GeeksforGeeks
+        </h1>
+          
+        <!-- Texto en negrita -->
+        <b>Detect browser or tab closing</b> 
+         
+        <!-- Parrafo-->
+        <p>
+            The beforeunload function is triggered
+            just before the browser or tab is to be
+            closed or the page is to be reloaded.
+            Modern browsers require some interaction
+            with the page, otherwise the dialog box
+            is not shown.
+        </p>
+        
+        <!-- formulario con un text área, que permite escribir texto con la capacidad de realizar saltos de texto, etc. -->
+        <form>
+            <textarea placeholder = "Trigger an 
+             interaction by writing something here">
+            </textarea>
+        </form>
+        
+        <!-- comienzo del script-->
+        <script type="text/javascript">
+            window.addEventListener('beforeunload', function (e) { //el script al momento de querer cerrar página o actualizarla, arrojará un mensaje del navegador indicando que los cambios no serán guardados.
+                e.preventDefault();
+                e.returnValue = '';
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        
+        <meta charset="UTF-8">
+        <title>FuncionHoraActual</title>
+    </head>
+    <body>
+        <!-- Con <script> lo que hacemos es comenzar a escribir nuestro código JavaScript-->
+        <script>
+            let d = new Date(); // a la variable d, se le asigna un tipo de dato de new Date, para que pueda obtener el formato de fecha.
+            document.body.innerHTML = "<h1>Time right now is:  " + d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds() //el document body innerHTML es para insertarlo dentro del cuerpo de la página. Luego, a la variable d, se le asignan las funciones getHours, getMinutes y getSeconds, para que nos arrojé la hora actual.
+            "</h1>"
+        </script>
+    </body>
+</html>
